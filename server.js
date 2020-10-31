@@ -1,9 +1,11 @@
 require("dotenv/config");
-const logger = require("morgan");
-const express = require("express");
 const fs = require("fs");
-const { gameData } = require("./data/gameData");
+const express = require("express");
+const logger = require("morgan");
 const cors = require("cors");
+
+const { gameData } = require("./data/gameData");
+const { wiiScraper } = require("./wiiScraper");
 
 const server = express();
 
@@ -25,6 +27,15 @@ server.use(express.urlencoded({ extended: false }));
 
 server.get("/gameData", (req, res, next) => {
   res.json(gameData);
+});
+
+server.get("/", (req, res, next) => {
+  res.sendFile("index.html", { root: __dirname });
+});
+
+server.get("/getCharacters", (req, res, next) => {
+  wiiScraper();
+  res.json({ message: "success" });
 });
 
 server.post("/gameData", (req, res, next) => {
