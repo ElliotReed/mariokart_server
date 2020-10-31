@@ -12,7 +12,7 @@ server.set("port", port);
 
 const corsOptions = {
   origin:
-    process.env === "production"
+    process.env.NODE_ENV === "production"
       ? process.env.DEPLOYED_HOST
       : process.env.LOCAL_HOST,
   credentials: true,
