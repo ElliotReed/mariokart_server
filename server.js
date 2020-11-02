@@ -1,11 +1,11 @@
 require("dotenv/config");
-const fs = require("fs");
 const express = require("express");
 const logger = require("morgan");
 const cors = require("cors");
 
 const { gameData } = require("./data/gameData");
-const { wiiScraper } = require("./wiiScraper");
+const { wiiScraper } = require("./scrapers/wiiScraper");
+const { writeData } = require("./utils/writeData");
 
 const server = express();
 
@@ -24,30 +24,38 @@ server.use(logger("dev"));
 server.use(cors(corsOptions));
 server.use(express.json());
 server.use(express.urlencoded({ extended: false }));
-
-server.get("/gameData", (req, res, next) => {
-  res.json(gameData);
-});
+server.use(express.static("public"));
 
 server.get("/", (req, res, next) => {
   res.sendFile("index.html", { root: __dirname });
 });
 
-server.get("/getCharacters", (req, res, next) => {
-  wiiScraper();
-  res.json({ message: "success" });
+server.get("/gameData", (req, res, next) => {
+  res.json(gameData);
 });
 
 server.post("/gameData", (req, res, next) => {
   const data = req.body;
-  const output = `const gameData =
-  ${JSON.stringify(data)}
-  module.exports = { gameData };`;
-  fs.writeFile("./data/gameData.js", output, (err) => {
-    if (err) throw err;
-    console.log("The file has been saved!");
-  });
-  res.send(204);
+  writeData(data, "gameData");
+  res.sendStatus(204);
+});
+
+server.get("/getCtgp", (req, res, next) => {
+  res.json({ message: "got" });
+});
+
+server.get("/getWii", (req, res, next) => {
+  wiiScraper()
+    .then((data) => {
+      const characterData = data.characters;
+      const vehicleData = data.vehicles;
+      writeData(characterData, "characterData");
+      writeData(vehicleData, "vehicleData");
+      res.json({ message: "success" });
+    })
+    .catch((err) => {
+      res.json(err);
+    });
 });
 
 server.use((req, res, next) => {
