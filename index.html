@@ -4,24 +4,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="manifest" hret="/site.webmanifest"> -->
+  <link rel="icon" type="image/png" href="/favicon.ico">
   <title>Mario Kart Game Assistant</title>
   <style>
-    #get-characters {
+    html,
+    body {
+      font-size: 100%
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #222222;
+      color: #f7f7f7;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      cursor: pointer;
+      font-family: inherit;
+      color: inherit;
+      margin: 2rem;
+      font-size: 1.6rem;
+      font-weight: bold;
+      background: rgb(66, 105, 66);
       text-transform: capitalize;
+      padding: 1rem;
+      border: 2px solid #878787;
+      border-radius: 5px;
+    }
+
+    .container {
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
     }
   </style>
 </head>
 
 <body>
   <h1>Mario Kart Game Assistant API</h1>
-  <button id="get-characters">get characters</button>
+  <div class="container">
+    <button id="get-wii">get wii</button>
+    <button id="get-ctgp">get ctgp</button>
+  </div>
   <script>
-    const getCharactersButton = document.getElementById('get-characters')
-    getCharactersButton.addEventListener('click', () => {
+    const production = false;
+    const BASE_URL = production ? 'https://api.mariokart.lifemanager.elliotreed.net' : 'http://localhost:3200'
+    const getWiiButton = document.getElementById('get-wii');
+    const getCTGPButton = document.getElementById('get-ctgp');
 
-      fetch('http://localhost:3200/getCharacters')
+    getWiiButton.addEventListener('click', () => {
+      fetch(`${BASE_URL}/getWii`)
         .then(res => res.json())
         .then(data => console.log('data', data))
+        .catch((err) => {
+          console.error('Error', err)
+        })
+    });
+
+    getCTGPButton.addEventListener('click', () => {
+      fetch(`${BASE_URL}/getCtgp`)
+        .then(res => res.json())
+        .then(data => console.log('data: ', data))
         .catch((err) => {
           console.error('Error', err)
         })
