@@ -37,15 +37,17 @@ function getCharacters(html) {
       id: i - 1,
       name: name,
       img: `${name.replace(/ /g, "_")}.png`,
-      totalBonus: 0,
+      bonus: {
+        total: 0,
+      },
     };
 
     if (character.id < 9 || character.id === 25) {
-      character.weightClass = "small";
+      character.class = "small";
     } else if (character.id < 17 || character.id === 26) {
-      character.weightClass = "medium";
+      character.class = "medium";
     } else if (character.id < 25 || character.id === 27) {
-      character.weightClass = "heavy";
+      character.class = "heavy";
     }
 
     if (i > 1) {
@@ -54,38 +56,38 @@ function getCharacters(html) {
       tds.each((i, td) => {
         if (i === 0) {
           const speedBonus = $(td).text().replace("-", "0");
-          character.speedBonus = parseInt(speedBonus, 10);
-          character.totalBonus += character.speedBonus;
+          character.bonus.speed = parseInt(speedBonus, 10);
+          character.bonus.total += character.bonus.speed;
         }
         if (i === 1) {
           const weightBonus = $(td).text().replace("-", "0");
-          character.weightBonus = parseInt(weightBonus, 10);
-          character.totalBonus += character.weightBonus;
+          character.bonus.weight = parseInt(weightBonus, 10);
+          character.bonus.total += character.bonus.weight;
         }
         if (i === 2) {
           const accelerationBonus = $(td).text().replace("-", "0");
-          character.accelerationBonus = parseInt(accelerationBonus, 10);
-          character.totalBonus += character.accelerationBonus;
+          character.bonus.acceleration = parseInt(accelerationBonus, 10);
+          character.bonus.total += character.bonus.acceleration;
         }
         if (i === 3) {
           const handlingBonus = $(td).text().replace("-", "0");
-          character.handlingBonus = parseInt(handlingBonus, 10);
-          character.totalBonus += character.handlingBonus;
+          character.bonus.handling = parseInt(handlingBonus, 10);
+          character.bonus.total += character.bonus.handling;
         }
         if (i === 4) {
           const driftBonus = $(td).text().replace("-", "0");
-          character.driftBonus = parseInt(driftBonus, 10);
-          character.totalBonus += character.driftBonus;
+          character.bonus.drift = parseInt(driftBonus, 10);
+          character.bonus.total += character.bonus.drift;
         }
         if (i === 5) {
           const offroadBonus = $(td).text().replace("-", "0");
-          character.offroadBonus = parseInt(offroadBonus, 10);
-          character.totalBonus += character.offroadBonus;
+          character.bonus.offroad = parseInt(offroadBonus, 10);
+          character.bonus.total += character.bonus.offroad;
         }
         if (i === 6) {
           const miniturboBonus = $(td).text().replace("-", "0");
-          character.miniturboBonus = parseInt(miniturboBonus, 10);
-          character.totalBonus += character.miniturboBonus;
+          character.bonus.miniturbo = parseInt(miniturboBonus, 10);
+          character.bonus.total += character.bonus.miniturbo;
         }
       });
       characters.push(character);
@@ -107,25 +109,27 @@ function getVehicles(html) {
     if (i != 0) {
       const vehicle = {
         id: i,
-        totalStats: 0,
+        stats: {
+          total: 0,
+        },
       };
 
       if (vehicle.id < 13) {
-        vehicle.weightClass = "small";
+        vehicle.class = "small";
         if (vehicle.id < 7) {
           vehicle.type = "kart";
         } else {
           vehicle.type = "bike";
         }
       } else if (vehicle.id < 25) {
-        vehicle.weightClass = "medium";
+        vehicle.class = "medium";
         if (vehicle.id < 19) {
           vehicle.type = "kart";
         } else {
           vehicle.type = "bike";
         }
       } else {
-        vehicle.weightClass = "heavy";
+        vehicle.class = "heavy";
         if (vehicle.id < 31) {
           vehicle.type = "kart";
         } else {
@@ -144,44 +148,44 @@ function getVehicles(html) {
 
         if (i === 1) {
           const speed = $(td).text();
-          vehicle.speed = parseInt(speed, 10);
-          vehicle.totalStats += vehicle.speed;
+          vehicle.stats.speed = parseInt(speed, 10);
+          vehicle.stats.total += vehicle.stats.speed;
         }
 
         if (i === 2) {
           const weight = $(td).text();
-          vehicle.weight = parseInt(weight, 10);
-          vehicle.totalStats += vehicle.weight;
+          vehicle.stats.weight = parseInt(weight, 10);
+          vehicle.stats.total += vehicle.stats.weight;
         }
 
         if (i === 3) {
           const acceleration = $(td).text();
-          vehicle.acceleration = parseInt(acceleration, 10);
-          vehicle.totalStats += vehicle.acceleration;
+          vehicle.stats.acceleration = parseInt(acceleration, 10);
+          vehicle.stats.total += vehicle.stats.acceleration;
         }
 
         if (i === 4) {
           const handling = $(td).text();
-          vehicle.handling = parseInt(handling, 10);
-          vehicle.totalStats += vehicle.handling;
+          vehicle.stats.handling = parseInt(handling, 10);
+          vehicle.stats.total += vehicle.stats.handling;
         }
 
         if (i === 5) {
           const drift = $(td).text();
-          vehicle.drift = parseInt(drift, 10);
-          vehicle.totalStats += vehicle.drift;
+          vehicle.stats.drift = parseInt(drift, 10);
+          vehicle.stats.total += vehicle.stats.drift;
         }
 
         if (i === 6) {
           const offroad = $(td).text();
-          vehicle.offroad = parseInt(offroad, 10);
-          vehicle.totalStats += vehicle.offroad;
+          vehicle.stats.offroad = parseInt(offroad, 10);
+          vehicle.stats.total += vehicle.stats.offroad;
         }
 
         if (i === 7) {
           const miniturbo = $(td).text();
-          vehicle.miniturbo = parseInt(miniturbo, 10);
-          vehicle.totalStats += vehicle.miniturbo;
+          vehicle.stats.miniturbo = parseInt(miniturbo, 10);
+          vehicle.stats.total += vehicle.stats.miniturbo;
         }
       });
       vehicles.push(vehicle);

@@ -1,0 +1,614 @@
+[
+  {
+    "id": 1,
+    "stats": {
+      "total": 302,
+      "speed": 41,
+      "weight": 29,
+      "acceleration": 48,
+      "handling": 48,
+      "drift": 51,
+      "offroad": 40,
+      "miniturbo": 45
+    },
+    "class": "small",
+    "type": "kart",
+    "name": "Standard Kart S",
+    "img": "Standard_Kart_S.png"
+  },
+  {
+    "id": 2,
+    "stats": {
+      "total": 324,
+      "speed": 27,
+      "weight": 27,
+      "acceleration": 56,
+      "handling": 64,
+      "drift": 37,
+      "offroad": 54,
+      "miniturbo": 59
+    },
+    "class": "small",
+    "type": "kart",
+    "name": "Booster Seat",
+    "img": "Booster_Seat.png"
+  },
+  {
+    "id": 3,
+    "stats": {
+      "total": 303,
+      "speed": 55,
+      "weight": 32,
+      "acceleration": 29,
+      "handling": 32,
+      "drift": 64,
+      "offroad": 27,
+      "miniturbo": 64
+    },
+    "class": "small",
+    "type": "kart",
+    "name": "Mini Beast",
+    "img": "Mini_Beast.png"
+  },
+  {
+    "id": 4,
+    "stats": {
+      "total": 336,
+      "speed": 34,
+      "weight": 24,
+      "acceleration": 64,
+      "handling": 56,
+      "drift": 59,
+      "offroad": 45,
+      "miniturbo": 54
+    },
+    "class": "small",
+    "type": "kart",
+    "name": "Cheep Charger",
+    "img": "Cheep_Charger.png"
+  },
+  {
+    "id": 5,
+    "stats": {
+      "total": 300,
+      "speed": 46,
+      "weight": 35,
+      "acceleration": 43,
+      "handling": 43,
+      "drift": 29,
+      "offroad": 64,
+      "miniturbo": 40
+    },
+    "class": "small",
+    "type": "kart",
+    "name": "Tiny Titan",
+    "img": "Tiny_Titan.png"
+  },
+  {
+    "id": 6,
+    "stats": {
+      "total": 249,
+      "speed": 60,
+      "weight": 29,
+      "acceleration": 35,
+      "handling": 29,
+      "drift": 43,
+      "offroad": 24,
+      "miniturbo": 29
+    },
+    "class": "small",
+    "type": "kart",
+    "name": "Blue Falcon",
+    "img": "Blue_Falcon.png"
+  },
+  {
+    "id": 7,
+    "stats": {
+      "total": 307,
+      "speed": 39,
+      "weight": 21,
+      "acceleration": 51,
+      "handling": 51,
+      "drift": 54,
+      "offroad": 43,
+      "miniturbo": 48
+    },
+    "class": "small",
+    "type": "bike",
+    "name": "Standard Bike S",
+    "img": "Standard_Bike_S.png"
+  },
+  {
+    "id": 8,
+    "stats": {
+      "total": 307,
+      "speed": 53,
+      "weight": 24,
+      "acceleration": 32,
+      "handling": 35,
+      "drift": 67,
+      "offroad": 29,
+      "miniturbo": 67
+    },
+    "class": "small",
+    "type": "bike",
+    "name": "Bullet Bike",
+    "img": "Bullet_Bike.png"
+  },
+  {
+    "id": 9,
+    "stats": {
+      "total": 327,
+      "speed": 25,
+      "weight": 18,
+      "acceleration": 59,
+      "handling": 67,
+      "drift": 40,
+      "offroad": 56,
+      "miniturbo": 62
+    },
+    "class": "small",
+    "type": "bike",
+    "name": "Bit Bike",
+    "img": "Bit_Bike.png"
+  },
+  {
+    "id": 10,
+    "stats": {
+      "total": 343,
+      "speed": 32,
+      "weight": 17,
+      "acceleration": 67,
+      "handling": 60,
+      "drift": 62,
+      "offroad": 48,
+      "miniturbo": 57
+    },
+    "class": "small",
+    "type": "bike",
+    "name": "Quacker",
+    "img": "Quacker.png"
+  },
+  {
+    "id": 11,
+    "stats": {
+      "total": 299,
+      "speed": 43,
+      "weight": 24,
+      "acceleration": 45,
+      "handling": 45,
+      "drift": 32,
+      "offroad": 67,
+      "miniturbo": 43
+    },
+    "class": "small",
+    "type": "bike",
+    "name": "Magikruiser",
+    "img": "Magikruiser.png"
+  },
+  {
+    "id": 12,
+    "stats": {
+      "total": 272,
+      "speed": 48,
+      "weight": 27,
+      "acceleration": 40,
+      "handling": 40,
+      "drift": 45,
+      "offroad": 35,
+      "miniturbo": 37
+    },
+    "class": "small",
+    "type": "bike",
+    "name": "Jet Bubble",
+    "img": "Jet_Bubble.png"
+  },
+  {
+    "id": 13,
+    "stats": {
+      "total": 294,
+      "speed": 46,
+      "weight": 45,
+      "acceleration": 40,
+      "handling": 43,
+      "drift": 45,
+      "offroad": 35,
+      "miniturbo": 40
+    },
+    "class": "medium",
+    "type": "kart",
+    "name": "Standard Kart M",
+    "img": "Standard_Kart_M.png"
+  },
+  {
+    "id": 14,
+    "stats": {
+      "total": 338,
+      "speed": 37,
+      "weight": 43,
+      "acceleration": 59,
+      "handling": 54,
+      "drift": 54,
+      "offroad": 40,
+      "miniturbo": 51
+    },
+    "class": "medium",
+    "type": "kart",
+    "name": "Classic Dragster",
+    "img": "Classic_Dragster.png"
+  },
+  {
+    "id": 15,
+    "stats": {
+      "total": 300,
+      "speed": 57,
+      "weight": 51,
+      "acceleration": 21,
+      "handling": 29,
+      "drift": 59,
+      "offroad": 24,
+      "miniturbo": 59
+    },
+    "class": "medium",
+    "type": "kart",
+    "name": "Wild Wing",
+    "img": "Wild_Wing.png"
+  },
+  {
+    "id": 16,
+    "stats": {
+      "total": 272,
+      "speed": 50,
+      "weight": 40,
+      "acceleration": 35,
+      "handling": 37,
+      "drift": 21,
+      "offroad": 54,
+      "miniturbo": 35
+    },
+    "class": "medium",
+    "type": "kart",
+    "name": "Super Blooper",
+    "img": "Super_Blooper.png"
+  },
+  {
+    "id": 17,
+    "stats": {
+      "total": 323,
+      "speed": 34,
+      "weight": 45,
+      "acceleration": 51,
+      "handling": 59,
+      "drift": 32,
+      "offroad": 48,
+      "miniturbo": 54
+    },
+    "class": "medium",
+    "type": "kart",
+    "name": "Daytripper",
+    "img": "Daytripper.png"
+  },
+  {
+    "id": 18,
+    "stats": {
+      "total": 245,
+      "speed": 64,
+      "weight": 48,
+      "acceleration": 27,
+      "handling": 24,
+      "drift": 37,
+      "offroad": 21,
+      "miniturbo": 24
+    },
+    "class": "medium",
+    "type": "kart",
+    "name": "Sprinter",
+    "img": "Sprinter.png"
+  },
+  {
+    "id": 19,
+    "stats": {
+      "total": 296,
+      "speed": 43,
+      "weight": 37,
+      "acceleration": 43,
+      "handling": 45,
+      "drift": 48,
+      "offroad": 37,
+      "miniturbo": 43
+    },
+    "class": "medium",
+    "type": "bike",
+    "name": "Standard Bike M",
+    "img": "Standard_Bike_M.png"
+  },
+  {
+    "id": 20,
+    "stats": {
+      "total": 299,
+      "speed": 55,
+      "weight": 37,
+      "acceleration": 24,
+      "handling": 32,
+      "drift": 62,
+      "offroad": 27,
+      "miniturbo": 62
+    },
+    "class": "medium",
+    "type": "bike",
+    "name": "Mach Bike",
+    "img": "Mach_Bike.png"
+  },
+  {
+    "id": 21,
+    "stats": {
+      "total": 322,
+      "speed": 32,
+      "weight": 32,
+      "acceleration": 54,
+      "handling": 62,
+      "drift": 35,
+      "offroad": 51,
+      "miniturbo": 56
+    },
+    "class": "medium",
+    "type": "bike",
+    "name": "Sugarscoot",
+    "img": "Sugarscoot.png"
+  },
+  {
+    "id": 22,
+    "stats": {
+      "total": 308,
+      "speed": 41,
+      "weight": 35,
+      "acceleration": 45,
+      "handling": 51,
+      "drift": 29,
+      "offroad": 62,
+      "miniturbo": 45
+    },
+    "class": "medium",
+    "type": "bike",
+    "name": "Zip Zip",
+    "img": "Zip_Zip.png"
+  },
+  {
+    "id": 23,
+    "stats": {
+      "total": 249,
+      "speed": 62,
+      "weight": 40,
+      "acceleration": 29,
+      "handling": 27,
+      "drift": 40,
+      "offroad": 24,
+      "miniturbo": 27
+    },
+    "class": "medium",
+    "type": "bike",
+    "name": "Sneakster",
+    "img": "Sneakster.png"
+  },
+  {
+    "id": 24,
+    "stats": {
+      "total": 285,
+      "speed": 48,
+      "weight": 43,
+      "acceleration": 37,
+      "handling": 40,
+      "drift": 24,
+      "offroad": 56,
+      "miniturbo": 37
+    },
+    "class": "medium",
+    "type": "bike",
+    "name": "Dolphin Dasher",
+    "img": "Dolphin_Dasher.png"
+  },
+  {
+    "id": 25,
+    "stats": {
+      "total": 294,
+      "speed": 48,
+      "weight": 59,
+      "acceleration": 37,
+      "handling": 40,
+      "drift": 40,
+      "offroad": 35,
+      "miniturbo": 35
+    },
+    "class": "heavy",
+    "type": "kart",
+    "name": "Standard Kart L",
+    "img": "Standard_Kart_L.png"
+  },
+  {
+    "id": 26,
+    "stats": {
+      "total": 311,
+      "speed": 39,
+      "weight": 64,
+      "acceleration": 48,
+      "handling": 54,
+      "drift": 18,
+      "offroad": 43,
+      "miniturbo": 45
+    },
+    "class": "heavy",
+    "type": "kart",
+    "name": "Offroader",
+    "img": "Offroader.png"
+  },
+  {
+    "id": 27,
+    "stats": {
+      "total": 272,
+      "speed": 62,
+      "weight": 59,
+      "acceleration": 16,
+      "handling": 21,
+      "drift": 48,
+      "offroad": 18,
+      "miniturbo": 48
+    },
+    "class": "heavy",
+    "type": "kart",
+    "name": "Flame Flyer",
+    "img": "Flame_Flyer.png"
+  },
+  {
+    "id": 28,
+    "stats": {
+      "total": 277,
+      "speed": 55,
+      "weight": 67,
+      "acceleration": 29,
+      "handling": 35,
+      "drift": 35,
+      "offroad": 29,
+      "miniturbo": 27
+    },
+    "class": "heavy",
+    "type": "kart",
+    "name": "Piranha Prowler",
+    "img": "Piranha_Prowler.png"
+  },
+  {
+    "id": 29,
+    "stats": {
+      "total": 222,
+      "speed": 69,
+      "weight": 56,
+      "acceleration": 21,
+      "handling": 17,
+      "drift": 27,
+      "offroad": 16,
+      "miniturbo": 16
+    },
+    "class": "heavy",
+    "type": "kart",
+    "name": "Jetsetter",
+    "img": "Jetsetter.png"
+  },
+  {
+    "id": 30,
+    "stats": {
+      "total": 307,
+      "speed": 53,
+      "weight": 62,
+      "acceleration": 27,
+      "handling": 29,
+      "drift": 56,
+      "offroad": 24,
+      "miniturbo": 56
+    },
+    "class": "heavy",
+    "type": "kart",
+    "name": "Honeycoupe",
+    "img": "Honeycoupe.png"
+  },
+  {
+    "id": 31,
+    "stats": {
+      "total": 300,
+      "speed": 46,
+      "weight": 54,
+      "acceleration": 40,
+      "handling": 43,
+      "drift": 43,
+      "offroad": 37,
+      "miniturbo": 37
+    },
+    "class": "heavy",
+    "type": "bike",
+    "name": "Standard Bike L",
+    "img": "Standard_Bike_L.png"
+  },
+  {
+    "id": 32,
+    "stats": {
+      "total": 279,
+      "speed": 60,
+      "weight": 54,
+      "acceleration": 18,
+      "handling": 24,
+      "drift": 51,
+      "offroad": 21,
+      "miniturbo": 51
+    },
+    "class": "heavy",
+    "type": "bike",
+    "name": "Flame Runner",
+    "img": "Flame_Runner.png"
+  },
+  {
+    "id": 33,
+    "stats": {
+      "total": 317,
+      "speed": 37,
+      "weight": 59,
+      "acceleration": 51,
+      "handling": 56,
+      "drift": 21,
+      "offroad": 45,
+      "miniturbo": 48
+    },
+    "class": "heavy",
+    "type": "bike",
+    "name": "Wario Bike",
+    "img": "Wario_Bike.png"
+  },
+  {
+    "id": 34,
+    "stats": {
+      "total": 304,
+      "speed": 50,
+      "weight": 48,
+      "acceleration": 29,
+      "handling": 32,
+      "drift": 59,
+      "offroad": 27,
+      "miniturbo": 59
+    },
+    "class": "heavy",
+    "type": "bike",
+    "name": "Shooting Star",
+    "img": "Shooting_Star.png"
+  },
+  {
+    "id": 35,
+    "stats": {
+      "total": 230,
+      "speed": 67,
+      "weight": 56,
+      "acceleration": 24,
+      "handling": 18,
+      "drift": 29,
+      "offroad": 18,
+      "miniturbo": 18
+    },
+    "class": "heavy",
+    "type": "bike",
+    "name": "Spear",
+    "img": "Spear.png"
+  },
+  {
+    "id": 36,
+    "stats": {
+      "total": 298,
+      "speed": 43,
+      "weight": 51,
+      "acceleration": 43,
+      "handling": 48,
+      "drift": 17,
+      "offroad": 56,
+      "miniturbo": 40
+    },
+    "class": "heavy",
+    "type": "bike",
+    "name": "Phantom",
+    "img": "Phantom.png"
+  }
+]

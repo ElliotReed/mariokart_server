@@ -2,8 +2,9 @@ require("dotenv/config");
 const express = require("express");
 const logger = require("morgan");
 const cors = require("cors");
+const compression = require("compression");
 
-const { gameData } = require("./data/gameData");
+const { jsonReader, jsonWriter } = require("./utils/jsonUtils");
 const { wiiScraper } = require("./scrapers/wiiScraper");
 const { writeData } = require("./utils/writeData");
 
@@ -25,19 +26,37 @@ server.use(cors(corsOptions));
 server.use(express.json());
 server.use(express.urlencoded({ extended: false }));
 server.use(express.static("public"));
+server.use(compression());
 
 server.get("/", (req, res, next) => {
   res.sendFile("index.html", { root: __dirname });
 });
 
 server.get("/gameData", (req, res, next) => {
-  res.json(gameData);
+  jsonReader("gameData.json", (err, data) => {
+    if (err) throw err;
+    res.json(data);
+  });
 });
 
 server.post("/gameData", (req, res, next) => {
   const data = req.body;
-  writeData(data, "gameData");
+  jsonWriter(data, "gameData.json");
   res.sendStatus(204);
+});
+
+server.get("/characterData", async (req, res, next) => {
+  jsonReader("characterData.json", (err, data) => {
+    if (err) throw err;
+    res.json(data);
+  });
+});
+
+server.get("/vehicleData", async (req, res, next) => {
+  jsonReader("vehicleData.json", (err, data) => {
+    if (err) throw err;
+    res.json(data);
+  });
 });
 
 server.get("/getCtgp", (req, res, next) => {
@@ -49,8 +68,8 @@ server.get("/getWii", (req, res, next) => {
     .then((data) => {
       const characterData = data.characters;
       const vehicleData = data.vehicles;
-      writeData(characterData, "characterData");
-      writeData(vehicleData, "vehicleData");
+      jsonWriter(characterData, "characterData.json");
+      jsonWriter(vehicleData, "vehicleData.json");
       res.json({ message: "success" });
     })
     .catch((err) => {
