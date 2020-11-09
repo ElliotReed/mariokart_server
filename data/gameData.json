@@ -1,14 +1,14 @@
 {
   "ellie": {
     "cups": {
-      "lifetime": 21,
-      "current": 0
+      "lifetime": 26,
+      "current": 5
     }
   },
   "elliot": {
     "cups": {
-      "lifetime": 22,
-      "current": 0
+      "lifetime": 23,
+      "current": 1
     }
   }
 }
