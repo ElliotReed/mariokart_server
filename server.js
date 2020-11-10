@@ -4,9 +4,9 @@ const logger = require("morgan");
 const cors = require("cors");
 const compression = require("compression");
 
-const { jsonReader, jsonWriter } = require("./utils/jsonUtils");
+const { jsonReader, jsonReaderSync, jsonWriter } = require("./utils/jsonUtils");
 const { wiiScraper } = require("./scrapers/wiiScraper");
-const { writeData } = require("./utils/writeData");
+const { ctgpScraper } = require("./scrapers/ctgpScraper");
 
 const server = express();
 
@@ -45,6 +45,15 @@ server.post("/gameData", (req, res, next) => {
   res.sendStatus(204);
 });
 
+server.get("/supportingData", (req, res, next) => {
+  const data = {};
+  const wiiCupData = jsonReaderSync("wiiCupData.json");
+  const wiiTrackData = jsonReaderSync("wiiTrackData.json");
+  data.wiiCupData = wiiCupData;
+  data.wiiTrackData = wiiTrackData;
+  res.json(data);
+});
+
 server.get("/characterData", async (req, res, next) => {
   jsonReader("characterData.json", (err, data) => {
     if (err) throw err;
@@ -60,7 +69,19 @@ server.get("/vehicleData", async (req, res, next) => {
 });
 
 server.get("/getCtgp", (req, res, next) => {
-  res.json({ message: "got" });
+  ctgpScraper()
+    .then((data) => {
+      const cupData = data.cups;
+      const trackData = data.tracks;
+      jsonWriter(cupData, "ctgpCupData.json");
+      jsonWriter(trackData, "ctgpTrackData.json");
+      res
+        .status(200)
+        .json({ message: "Ctgp data has been scraped successfully!" });
+    })
+    .catch((err) => {
+      res.json(err);
+    });
 });
 
 server.get("/getWii", (req, res, next) => {
@@ -70,7 +91,9 @@ server.get("/getWii", (req, res, next) => {
       const vehicleData = data.vehicles;
       jsonWriter(characterData, "characterData.json");
       jsonWriter(vehicleData, "vehicleData.json");
-      res.json({ message: "success" });
+      res
+        .status(200)
+        .json({ message: "Wii data has been scraped successfully!" });
     })
     .catch((err) => {
       res.json(err);

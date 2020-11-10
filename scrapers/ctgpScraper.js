@@ -1,66 +1,73 @@
 const rp = require("request-promise");
 const cheerio = require("cheerio");
-const fs = require("fs");
 
 const url = "http://wiki.tockdom.com/wiki/CTGP_Revolution";
 
-const cups = [];
-const tracks = [];
+function ctgpScraper() {
+  const response = rp(url)
+    .then(function (html) {
+      const data = getData(html);
+      return data;
+    })
+    .catch(function (err) {
+      console.log(err);
+    });
+  return response;
+}
+
 let currentCup = 0;
 let currentTrack = 1;
 
-rp(url)
-  .then(function (html) {
-    scrape(html);
-  })
-  .catch(function (err) {
-    console.log(err);
-  });
+function getData(html) {
+  const data = {
+    cups: [],
+    tracks: [],
+  };
 
-function scrape(html) {
   const $ = cheerio.load(html);
-  const trackTables = $("table.sortable", html);
-  const trackTable = trackTables[0];
-  const trackTableBody = $("tbody", trackTable);
-  const rows = $("tr", trackTableBody);
 
-  rows.toArray().forEach((row) => {
-    let startIndex = 0;
-    const tdArray = $("td", row).toArray();
+  const tables = $("table.sortable", html);
+  const trackTable = (tables[0], tables);
+  const tableRows = $("tr", trackTable);
+  tableRows.each((i, row) => {
+    // eliminate header row [0]
+    if (i != 0) {
+      let startIndex = 0; // row may have first element cup
+      const tds = $("td", row);
 
-    if ($(tdArray[startIndex]).attr("rowspan") != null) {
-      const cupname = $(tdArray[startIndex]).text();
-      addCup(cupname);
-      startIndex = 1;
+      if ($(tds[0]).attr("rowspan") != null) {
+        const cupname = $(tds[0]).text();
+        const cup = addCup(cupname);
+        data.cups.push(cup);
+        startIndex = 1; // first td is cup
+      }
+      const trackTitle = $("a", tds[startIndex]).text();
+      const track = addTrack(trackTitle);
+      data.tracks.push(track);
+      data.cups[currentCup - 1].tracks.default.push(track.id);
+
+      // Other information for later user
+      // const trackVersion = $(tds[startIndex + 1]).text();
+      // const numberOfLaps = 0;
+      // const authors = "";
     }
-
-    const trackTitle = $("a", tdArray[startIndex]).text();
-    // console.log("trackTitle: ", trackTitle);
-
-    const trackVersion = $(tdArray[startIndex + 1]).text();
-    // console.log("trackVersion: ", trackVersion);
-
-    const numberOfLaps = 0;
-    const authors = "";
-
-    addTrack(trackTitle);
   });
 
-  createCupsFile();
-  createTracksFile();
+  return data;
 }
 
 function addCup(cupname) {
-  currentCup++;
   const title = cupname.trim();
+  currentCup++;
   const cup = {
     id: currentCup,
     title: title,
-    img: `assets/img/CTGP_Revolution_${title.replace(/ /g, "_")}.png`,
-    defaultTracks: [],
-    myTracks: [],
+    img: `CTGP_Revolution_${title.replace(/ /g, "_")}.png`,
+    tracks: {
+      default: [],
+    },
   };
-  cups.push(cup);
+  return cup;
 }
 
 function addTrack(trackTitle) {
@@ -68,32 +75,11 @@ function addTrack(trackTitle) {
     id: currentTrack,
     title: trackTitle,
   };
-  if (track.title.length > 50) {
-    return;
-  }
-  tracks.push(track);
+  // if (track.title.length > 50) {
+  //   return;
+  // }
   currentTrack++;
-
-  cups[currentCup - 1].defaultTracks.push(track.id);
+  return track;
 }
 
-function createCupsFile() {
-  const output = `const cupData =
-    ${JSON.stringify(cups)}
-    export { cupData }`;
-  fs.writeFile("cupData.js", output, function (err) {
-    if (err) throw err;
-    console.log("cupData has been saved");
-  });
-}
-
-function createTracksFile() {
-  const output = `const trackData =
-  ${JSON.stringify(tracks)}
-  export { trackData }`;
-
-  fs.writeFile("trackData.js", output, function (err) {
-    if (err) throw err;
-    console.log("trackData has been saved");
-  });
-}
+module.exports = { ctgpScraper };

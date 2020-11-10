@@ -1,6 +1,5 @@
 const rp = require("request-promise");
 const cheerio = require("cheerio");
-const fs = require("fs");
 
 const url = "https://www.mariowiki.com/Mario_Kart_Wii";
 
