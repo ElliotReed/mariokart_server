@@ -1,5 +1,11 @@
 const fs = require("fs");
 
+function jsonReaderSync(fileName) {
+  const rawdata = fs.readFileSync(__dirname + `/../data/${fileName}`);
+  const data = JSON.parse(rawdata);
+  return data;
+}
+
 function jsonReader(fileName, cb) {
   fs.readFile(__dirname + `/../data/${fileName}`, (err, fileData) => {
     if (err) {
@@ -23,4 +29,4 @@ function jsonWriter(data, fileName) {
   });
 }
 
-module.exports = { jsonReader, jsonWriter };
+module.exports = { jsonReader, jsonReaderSync, jsonWriter };

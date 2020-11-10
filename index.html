@@ -10,73 +10,150 @@
   <style>
     html,
     body {
-      font-size: 100%
+      font-size: 100%;
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #222222;
-      color: #f7f7f7;
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+      background: #222222;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #f7f7f7;
+      user-select: none;
     }
 
     button {
-      cursor: pointer;
-      font-family: inherit;
-      color: inherit;
       margin: 2rem;
+      border-radius: 5px;
+      border: 2px solid #878787;
+      background: rgb(66, 105, 66);
+      padding: 1rem;
+      font-family: inherit;
       font-size: 1.6rem;
       font-weight: bold;
-      background: rgb(66, 105, 66);
       text-transform: capitalize;
-      padding: 1rem;
-      border: 2px solid #878787;
-      border-radius: 5px;
+      color: inherit;
+      cursor: pointer;
     }
 
     .container {
-      width: 50%;
       display: flex;
       justify-content: space-around;
+      width: 50%;
+    }
+
+    #message-text {
+      padding: 1em 1.5em;
+      font-size: 1.5rem
+    }
+
+    #loader {
+      z-index: 2;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: #222222ee;
+      font-size: 2rem;
+      font-weight: 600;
     }
   </style>
 </head>
 
 <body>
   <h1>Mario Kart Game Assistant API</h1>
+
   <div class="container">
     <button id="get-wii">get wii</button>
     <button id="get-ctgp">get ctgp</button>
   </div>
+
+  <p id="message-text"></p>
+  <div id="loader">
+    <p id="loader-text"></p>
+  </div>
+
   <script>
     const production = false;
     const BASE_URL = production ? 'https://api.mariokart.lifemanager.elliotreed.net' : 'http://localhost:3200'
-    const getWiiButton = document.getElementById('get-wii');
-    const getCTGPButton = document.getElementById('get-ctgp');
+    const loader = document.getElementById('loader');
+    const loaderText = document.getElementById('loader-text');
+    const messageText = document.getElementById("message-text");
 
-    getWiiButton.addEventListener('click', () => {
+    function setTextContent(el, text) {
+      el.textContent = ''
+      el.textContent = text;
+    }
+
+    function shouldDisplayLoader(bool) {
+      if (bool) {
+        loader.style.display = "flex"
+      } else {
+        loader.style.display = "none"
+      }
+    }
+
+    function handleWiiButton() {
+      shouldDisplayLoader(true);
+      setTextContent(loaderText, "Getting Wii data, please wait...")
       fetch(`${BASE_URL}/getWii`)
-        .then(res => res.json())
-        .then(data => console.log('data', data))
-        .catch((err) => {
-          console.error('Error', err)
+        .then(function (response) {
+          if (response.ok) {
+            return response.json();
+          }
+          throw new Error(response)
         })
-    });
+        .then(function (data) {
+          setTextContent(messageText, data.message);
+          shouldDisplayLoader(false)
+        })
+        .catch(function (err) {
+          setTextContent(messageText, err.message);
+          shouldDisplayLoader(false)
+        })
+    };
 
-    getCTGPButton.addEventListener('click', () => {
+    function handleCTGPButton() {
+      shouldDisplayLoader(true);
+      setTextContent(loaderText, "Getting CTGP data, please wait...")
       fetch(`${BASE_URL}/getCtgp`)
-        .then(res => res.json())
-        .then(data => console.log('data: ', data))
-        .catch((err) => {
-          console.error('Error', err)
+        .then(function (response) {
+          if (response.ok) {
+            return response.json();
+          }
+          throw new Error(response)
         })
-    });
+        .then(function (data) {
+          setTextContent(messageText, data.message);
+          shouldDisplayLoader(false)
+        })
+        .catch(function (err) {
+          setTextContent(messageText, err.message);
+          shouldDisplayLoader(false)
+        })
+    };
+
+    const clickHandler = function (event) {
+      const element = event.target;
+      if (!element.id) return;
+      if (element.id === "get-ctgp") {
+        handleCTGPButton();
+      }
+      if (element.id === "get-wii") {
+        handleWiiButton();
+      }
+    };
+
+    document.addEventListener('click', clickHandler)
 
   </script>
 </body>
