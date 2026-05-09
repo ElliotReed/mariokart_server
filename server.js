@@ -19,6 +19,7 @@ const corsOptions = {
       ? process.env.DEPLOYED_HOST
       : process.env.LOCAL_HOST,
   credentials: true,
+  optionsSuccessStatus: 200,
 };
 
 server.use(logger("dev"));
@@ -45,6 +46,7 @@ server.post("/gameData", (req, res, next) => {
   res.sendStatus(204);
 });
 
+// TODO change data track and finish getting from request
 server.get("/supportingData", (req, res, next) => {
   const data = {};
   const wiiCupData = jsonReaderSync("wiiCupData.json");
@@ -69,6 +71,7 @@ server.get("/vehicleData", async (req, res, next) => {
 });
 
 server.get("/getCtgp", (req, res, next) => {
+  return
   ctgpScraper()
     .then((data) => {
       const cupData = data.cups;
@@ -85,6 +88,7 @@ server.get("/getCtgp", (req, res, next) => {
 });
 
 server.get("/getWii", (req, res, next) => {
+  return
   wiiScraper()
     .then((data) => {
       const characterData = data.characters;

@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "title": "Blooper Cup",
-    "img": "CTGP_Revolution_Blooper_Cup.png",
+    "title": "Mushroom Cup",
+    "img": "CTGP_Revolution_Mushroom_Cup.png",
     "tracks": {
       "default": [
         1,
@@ -14,8 +14,8 @@
   },
   {
     "id": 2,
-    "title": "Mega Mushroom Cup",
-    "img": "CTGP_Revolution_Mega_Mushroom_Cup.png",
+    "title": "Flower Cup",
+    "img": "CTGP_Revolution_Flower_Cup.png",
     "tracks": {
       "default": [
         5,
@@ -27,8 +27,8 @@
   },
   {
     "id": 3,
-    "title": "Thundercloud Cup",
-    "img": "CTGP_Revolution_Thundercloud_Cup.png",
+    "title": "Star Cup",
+    "img": "CTGP_Revolution_Star_Cup.png",
     "tracks": {
       "default": [
         9,
@@ -40,8 +40,8 @@
   },
   {
     "id": 4,
-    "title": "POW Cup",
-    "img": "CTGP_Revolution_POW_Cup.png",
+    "title": "Special Cup",
+    "img": "CTGP_Revolution_Special_Cup.png",
     "tracks": {
       "default": [
         13,
@@ -53,8 +53,8 @@
   },
   {
     "id": 5,
-    "title": "Bob-omb Cup",
-    "img": "CTGP_Revolution_Bob-omb_Cup.png",
+    "title": "Shell Cup",
+    "img": "CTGP_Revolution_Shell_Cup.png",
     "tracks": {
       "default": [
         17,
@@ -66,8 +66,8 @@
   },
   {
     "id": 6,
-    "title": "Fake Item Cup",
-    "img": "CTGP_Revolution_Fake_Item_Cup.png",
+    "title": "Banana Cup",
+    "img": "CTGP_Revolution_Banana_Cup.png",
     "tracks": {
       "default": [
         21,
@@ -79,8 +79,8 @@
   },
   {
     "id": 7,
-    "title": "Golden Mushroom Cup",
-    "img": "CTGP_Revolution_Golden_Mushroom_Cup.png",
+    "title": "Leaf Cup",
+    "img": "CTGP_Revolution_Leaf_Cup.png",
     "tracks": {
       "default": [
         25,
@@ -92,8 +92,8 @@
   },
   {
     "id": 8,
-    "title": "Spring Cup",
-    "img": "CTGP_Revolution_Spring_Cup.png",
+    "title": "Lightning Cup",
+    "img": "CTGP_Revolution_Lightning_Cup.png",
     "tracks": {
       "default": [
         29,
@@ -105,8 +105,8 @@
   },
   {
     "id": 9,
-    "title": "Fireball Cup",
-    "img": "CTGP_Revolution_Fireball_Cup.png",
+    "title": "Blooper Cup",
+    "img": "CTGP_Revolution_Blooper_Cup.png",
     "tracks": {
       "default": [
         33,
@@ -118,8 +118,8 @@
   },
   {
     "id": 10,
-    "title": "Red Shell Cup",
-    "img": "CTGP_Revolution_Red_Shell_Cup.png",
+    "title": "Mega Mushroom Cup",
+    "img": "CTGP_Revolution_Mega_Mushroom_Cup.png",
     "tracks": {
       "default": [
         37,
@@ -131,8 +131,8 @@
   },
   {
     "id": 11,
-    "title": "Blue Shell Cup",
-    "img": "CTGP_Revolution_Blue_Shell_Cup.png",
+    "title": "Thundercloud Cup",
+    "img": "CTGP_Revolution_Thundercloud_Cup.png",
     "tracks": {
       "default": [
         41,
@@ -144,8 +144,8 @@
   },
   {
     "id": 12,
-    "title": "Bullet Bill Cup",
-    "img": "CTGP_Revolution_Bullet_Bill_Cup.png",
+    "title": "POW Cup",
+    "img": "CTGP_Revolution_POW_Cup.png",
     "tracks": {
       "default": [
         45,
@@ -157,8 +157,8 @@
   },
   {
     "id": 13,
-    "title": "Chain Chomp Cup",
-    "img": "CTGP_Revolution_Chain_Chomp_Cup.png",
+    "title": "Bob-omb Cup",
+    "img": "CTGP_Revolution_Bob-omb_Cup.png",
     "tracks": {
       "default": [
         49,
@@ -170,8 +170,8 @@
   },
   {
     "id": 14,
-    "title": "Mii Outfit C Cup",
-    "img": "CTGP_Revolution_Mii_Outfit_C_Cup.png",
+    "title": "Fake Item Cup",
+    "img": "CTGP_Revolution_Fake_Item_Cup.png",
     "tracks": {
       "default": [
         53,
@@ -183,8 +183,8 @@
   },
   {
     "id": 15,
-    "title": "Poison Mushroom Cup",
-    "img": "CTGP_Revolution_Poison_Mushroom_Cup.png",
+    "title": "Golden Mushroom Cup",
+    "img": "CTGP_Revolution_Golden_Mushroom_Cup.png",
     "tracks": {
       "default": [
         57,
@@ -196,8 +196,8 @@
   },
   {
     "id": 16,
-    "title": "Ice Flower Cup",
-    "img": "CTGP_Revolution_Ice_Flower_Cup.png",
+    "title": "Spring Cup",
+    "img": "CTGP_Revolution_Spring_Cup.png",
     "tracks": {
       "default": [
         61,
@@ -209,8 +209,8 @@
   },
   {
     "id": 17,
-    "title": "Propellor Cup",
-    "img": "CTGP_Revolution_Propellor_Cup.png",
+    "title": "Fireball Cup",
+    "img": "CTGP_Revolution_Fireball_Cup.png",
     "tracks": {
       "default": [
         65,
@@ -222,8 +222,8 @@
   },
   {
     "id": 18,
-    "title": "Hammer Bro Cup",
-    "img": "CTGP_Revolution_Hammer_Bro_Cup.png",
+    "title": "Red Shell Cup",
+    "img": "CTGP_Revolution_Red_Shell_Cup.png",
     "tracks": {
       "default": [
         69,
@@ -235,8 +235,8 @@
   },
   {
     "id": 19,
-    "title": "Wiggler Cup",
-    "img": "CTGP_Revolution_Wiggler_Cup.png",
+    "title": "Blue Shell Cup",
+    "img": "CTGP_Revolution_Blue_Shell_Cup.png",
     "tracks": {
       "default": [
         73,
@@ -248,8 +248,8 @@
   },
   {
     "id": 20,
-    "title": "Penguin Suit Cup",
-    "img": "CTGP_Revolution_Penguin_Suit_Cup.png",
+    "title": "Bullet Bill Cup",
+    "img": "CTGP_Revolution_Bullet_Bill_Cup.png",
     "tracks": {
       "default": [
         77,
@@ -261,8 +261,8 @@
   },
   {
     "id": 21,
-    "title": "Bee Mushroom Cup",
-    "img": "CTGP_Revolution_Bee_Mushroom_Cup.png",
+    "title": "Chain Chomp Cup",
+    "img": "CTGP_Revolution_Chain_Chomp_Cup.png",
     "tracks": {
       "default": [
         81,
@@ -274,8 +274,8 @@
   },
   {
     "id": 22,
-    "title": "Rock Mushroom Cup",
-    "img": "CTGP_Revolution_Rock_Mushroom_Cup.png",
+    "title": "Mii Outfit C Cup",
+    "img": "CTGP_Revolution_Mii_Outfit_C_Cup.png",
     "tracks": {
       "default": [
         85,
@@ -287,8 +287,8 @@
   },
   {
     "id": 23,
-    "title": "1UP Cup",
-    "img": "CTGP_Revolution_1UP_Cup.png",
+    "title": "Poison Mushroom Cup",
+    "img": "CTGP_Revolution_Poison_Mushroom_Cup.png",
     "tracks": {
       "default": [
         89,
@@ -300,8 +300,8 @@
   },
   {
     "id": 24,
-    "title": "Feather Cup",
-    "img": "CTGP_Revolution_Feather_Cup.png",
+    "title": "Ice Flower Cup",
+    "img": "CTGP_Revolution_Ice_Flower_Cup.png",
     "tracks": {
       "default": [
         93,
@@ -313,8 +313,8 @@
   },
   {
     "id": 25,
-    "title": "Shine Sprite Cup",
-    "img": "CTGP_Revolution_Shine_Sprite_Cup.png",
+    "title": "Propeller Cup",
+    "img": "CTGP_Revolution_Propeller_Cup.png",
     "tracks": {
       "default": [
         97,
@@ -326,8 +326,8 @@
   },
   {
     "id": 26,
-    "title": "Yoshi Egg Cup",
-    "img": "CTGP_Revolution_Yoshi_Egg_Cup.png",
+    "title": "Hammer Bro Cup",
+    "img": "CTGP_Revolution_Hammer_Bro_Cup.png",
     "tracks": {
       "default": [
         101,
@@ -339,8 +339,8 @@
   },
   {
     "id": 27,
-    "title": "Stone Tanooki Cup",
-    "img": "CTGP_Revolution_Stone_Tanooki_Cup.png",
+    "title": "Wiggler Cup",
+    "img": "CTGP_Revolution_Wiggler_Cup.png",
     "tracks": {
       "default": [
         105,
@@ -352,8 +352,8 @@
   },
   {
     "id": 28,
-    "title": "Birdo Egg Cup",
-    "img": "CTGP_Revolution_Birdo_Egg_Cup.png",
+    "title": "Penguin Suit Cup",
+    "img": "CTGP_Revolution_Penguin_Suit_Cup.png",
     "tracks": {
       "default": [
         109,
@@ -365,8 +365,8 @@
   },
   {
     "id": 29,
-    "title": "Bowser Shell Cup",
-    "img": "CTGP_Revolution_Bowser_Shell_Cup.png",
+    "title": "Bee Mushroom Cup",
+    "img": "CTGP_Revolution_Bee_Mushroom_Cup.png",
     "tracks": {
       "default": [
         113,
@@ -378,8 +378,8 @@
   },
   {
     "id": 30,
-    "title": "Metal Mushroom Cup",
-    "img": "CTGP_Revolution_Metal_Mushroom_Cup.png",
+    "title": "Rock Mushroom Cup",
+    "img": "CTGP_Revolution_Rock_Mushroom_Cup.png",
     "tracks": {
       "default": [
         117,
@@ -391,8 +391,8 @@
   },
   {
     "id": 31,
-    "title": "Luigi Fireball Cup",
-    "img": "CTGP_Revolution_Luigi_Fireball_Cup.png",
+    "title": "1UP Cup",
+    "img": "CTGP_Revolution_1UP_Cup.png",
     "tracks": {
       "default": [
         121,
@@ -404,8 +404,8 @@
   },
   {
     "id": 32,
-    "title": "Pencil Cup",
-    "img": "CTGP_Revolution_Pencil_Cup.png",
+    "title": "Feather Cup",
+    "img": "CTGP_Revolution_Feather_Cup.png",
     "tracks": {
       "default": [
         125,
@@ -417,8 +417,8 @@
   },
   {
     "id": 33,
-    "title": "Grand Star Cup",
-    "img": "CTGP_Revolution_Grand_Star_Cup.png",
+    "title": "Shine Sprite Cup",
+    "img": "CTGP_Revolution_Shine_Sprite_Cup.png",
     "tracks": {
       "default": [
         129,
@@ -430,8 +430,8 @@
   },
   {
     "id": 34,
-    "title": "Boo Cup",
-    "img": "CTGP_Revolution_Boo_Cup.png",
+    "title": "Yoshi Egg Cup",
+    "img": "CTGP_Revolution_Yoshi_Egg_Cup.png",
     "tracks": {
       "default": [
         133,
@@ -443,8 +443,8 @@
   },
   {
     "id": 35,
-    "title": "Spin Drill Cup",
-    "img": "CTGP_Revolution_Spin_Drill_Cup.png",
+    "title": "Stone Tanooki Cup",
+    "img": "CTGP_Revolution_Stone_Tanooki_Cup.png",
     "tracks": {
       "default": [
         137,
@@ -456,8 +456,8 @@
   },
   {
     "id": 36,
-    "title": "Star Bits Cup",
-    "img": "CTGP_Revolution_Star_Bits_Cup.png",
+    "title": "Birdo Egg Cup",
+    "img": "CTGP_Revolution_Birdo_Egg_Cup.png",
     "tracks": {
       "default": [
         141,
@@ -469,8 +469,8 @@
   },
   {
     "id": 37,
-    "title": "Lava Bubble Cup",
-    "img": "CTGP_Revolution_Lava_Bubble_Cup.png",
+    "title": "Bowser Shell Cup",
+    "img": "CTGP_Revolution_Bowser_Shell_Cup.png",
     "tracks": {
       "default": [
         145,
@@ -482,8 +482,8 @@
   },
   {
     "id": 38,
-    "title": "Cheep Cheep Cup",
-    "img": "CTGP_Revolution_Cheep_Cheep_Cup.png",
+    "title": "Metal Mushroom Cup",
+    "img": "CTGP_Revolution_Metal_Mushroom_Cup.png",
     "tracks": {
       "default": [
         149,
@@ -495,8 +495,8 @@
   },
   {
     "id": 39,
-    "title": "Ice Bro Cup",
-    "img": "CTGP_Revolution_Ice_Bro_Cup.png",
+    "title": "Luigi Fireball Cup",
+    "img": "CTGP_Revolution_Luigi_Fireball_Cup.png",
     "tracks": {
       "default": [
         153,
@@ -508,8 +508,8 @@
   },
   {
     "id": 40,
-    "title": "Gold Flower Cup",
-    "img": "CTGP_Revolution_Gold_Flower_Cup.png",
+    "title": "Pencil Cup",
+    "img": "CTGP_Revolution_Pencil_Cup.png",
     "tracks": {
       "default": [
         157,
@@ -521,8 +521,8 @@
   },
   {
     "id": 41,
-    "title": "Question Block Cup",
-    "img": "CTGP_Revolution_Question_Block_Cup.png",
+    "title": "Grand Star Cup",
+    "img": "CTGP_Revolution_Grand_Star_Cup.png",
     "tracks": {
       "default": [
         161,
@@ -534,8 +534,8 @@
   },
   {
     "id": 42,
-    "title": "Cloud Flower Cup",
-    "img": "CTGP_Revolution_Cloud_Flower_Cup.png",
+    "title": "Boo Cup",
+    "img": "CTGP_Revolution_Boo_Cup.png",
     "tracks": {
       "default": [
         165,
@@ -547,8 +547,8 @@
   },
   {
     "id": 43,
-    "title": "Brick Block Cup",
-    "img": "CTGP_Revolution_Brick_Block_Cup.png",
+    "title": "Spin Drill Cup",
+    "img": "CTGP_Revolution_Spin_Drill_Cup.png",
     "tracks": {
       "default": [
         169,
@@ -560,8 +560,8 @@
   },
   {
     "id": 44,
-    "title": "Blue Coin Cup",
-    "img": "CTGP_Revolution_Blue_Coin_Cup.png",
+    "title": "Star Bits Cup",
+    "img": "CTGP_Revolution_Star_Bits_Cup.png",
     "tracks": {
       "default": [
         173,
@@ -573,8 +573,8 @@
   },
   {
     "id": 45,
-    "title": "Green Star Cup",
-    "img": "CTGP_Revolution_Green_Star_Cup.png",
+    "title": "Lava Bubble Cup",
+    "img": "CTGP_Revolution_Lava_Bubble_Cup.png",
     "tracks": {
       "default": [
         177,
@@ -586,8 +586,8 @@
   },
   {
     "id": 46,
-    "title": "Goomba Cup",
-    "img": "CTGP_Revolution_Goomba_Cup.png",
+    "title": "Cheep Cheep Cup",
+    "img": "CTGP_Revolution_Cheep_Cheep_Cup.png",
     "tracks": {
       "default": [
         181,
@@ -599,8 +599,8 @@
   },
   {
     "id": 47,
-    "title": "Lakitu Cup",
-    "img": "CTGP_Revolution_Lakitu_Cup.png",
+    "title": "Ice Bro Cup",
+    "img": "CTGP_Revolution_Ice_Bro_Cup.png",
     "tracks": {
       "default": [
         185,
@@ -612,8 +612,8 @@
   },
   {
     "id": 48,
-    "title": "Volt Shroom Cup",
-    "img": "CTGP_Revolution_Volt_Shroom_Cup.png",
+    "title": "Gold Flower Cup",
+    "img": "CTGP_Revolution_Gold_Flower_Cup.png",
     "tracks": {
       "default": [
         189,
@@ -625,8 +625,8 @@
   },
   {
     "id": 49,
-    "title": "Acorn Cup",
-    "img": "CTGP_Revolution_Acorn_Cup.png",
+    "title": "Question Block Cup",
+    "img": "CTGP_Revolution_Question_Block_Cup.png",
     "tracks": {
       "default": [
         193,
@@ -638,8 +638,8 @@
   },
   {
     "id": 50,
-    "title": "Shy Guy Cup",
-    "img": "CTGP_Revolution_Shy_Guy_Cup.png",
+    "title": "Cloud Flower Cup",
+    "img": "CTGP_Revolution_Cloud_Flower_Cup.png",
     "tracks": {
       "default": [
         197,
@@ -651,8 +651,8 @@
   },
   {
     "id": 51,
-    "title": "Thwomp Cup",
-    "img": "CTGP_Revolution_Thwomp_Cup.png",
+    "title": "Brick Block Cup",
+    "img": "CTGP_Revolution_Brick_Block_Cup.png",
     "tracks": {
       "default": [
         201,
@@ -664,8 +664,8 @@
   },
   {
     "id": 52,
-    "title": "Piranha Plant Cup",
-    "img": "CTGP_Revolution_Piranha_Plant_Cup.png",
+    "title": "Blue Coin Cup",
+    "img": "CTGP_Revolution_Blue_Coin_Cup.png",
     "tracks": {
       "default": [
         205,
@@ -677,8 +677,8 @@
   },
   {
     "id": 53,
-    "title": "Boomerang Flower Cup",
-    "img": "CTGP_Revolution_Boomerang_Flower_Cup.png",
+    "title": "Green Star Cup",
+    "img": "CTGP_Revolution_Green_Star_Cup.png",
     "tracks": {
       "default": [
         209,
@@ -690,8 +690,8 @@
   },
   {
     "id": 54,
-    "title": "Rainbow Cup",
-    "img": "CTGP_Revolution_Rainbow_Cup.png",
+    "title": "Goomba Cup",
+    "img": "CTGP_Revolution_Goomba_Cup.png",
     "tracks": {
       "default": [
         213,
@@ -703,42 +703,114 @@
   },
   {
     "id": 55,
-    "title": "Hidden Tracks",
-    "img": "CTGP_Revolution_Hidden_Tracks.png",
+    "title": "Lakitu Cup",
+    "img": "CTGP_Revolution_Lakitu_Cup.png",
     "tracks": {
       "default": [
         217,
         218,
         219,
-        220,
+        220
+      ]
+    }
+  },
+  {
+    "id": 56,
+    "title": "Volt Shroom Cup",
+    "img": "CTGP_Revolution_Volt_Shroom_Cup.png",
+    "tracks": {
+      "default": [
         221,
         222,
         223,
-        224,
+        224
+      ]
+    }
+  },
+  {
+    "id": 57,
+    "title": "Acorn Cup",
+    "img": "CTGP_Revolution_Acorn_Cup.png",
+    "tracks": {
+      "default": [
         225,
         226,
         227,
-        228,
+        228
+      ]
+    }
+  },
+  {
+    "id": 58,
+    "title": "Shy Guy Cup",
+    "img": "CTGP_Revolution_Shy_Guy_Cup.png",
+    "tracks": {
+      "default": [
         229,
         230,
         231,
-        232,
+        232
+      ]
+    }
+  },
+  {
+    "id": 59,
+    "title": "Thwomp Cup",
+    "img": "CTGP_Revolution_Thwomp_Cup.png",
+    "tracks": {
+      "default": [
         233,
         234,
         235,
-        236,
+        236
+      ]
+    }
+  },
+  {
+    "id": 60,
+    "title": "Piranha Plant Cup",
+    "img": "CTGP_Revolution_Piranha_Plant_Cup.png",
+    "tracks": {
+      "default": [
         237,
         238,
         239,
-        240,
+        240
+      ]
+    }
+  },
+  {
+    "id": 61,
+    "title": "Boomerang Flower Cup",
+    "img": "CTGP_Revolution_Boomerang_Flower_Cup.png",
+    "tracks": {
+      "default": [
         241,
         242,
         243,
-        244,
+        244
+      ]
+    }
+  },
+  {
+    "id": 62,
+    "title": "Rainbow Cup",
+    "img": "CTGP_Revolution_Rainbow_Cup.png",
+    "tracks": {
+      "default": [
         245,
         246,
         247,
-        248,
+        248
+      ]
+    }
+  },
+  {
+    "id": 63,
+    "title": "Hidden Tracks",
+    "img": "CTGP_Revolution_Hidden_Tracks.png",
+    "tracks": {
+      "default": [
         249,
         250,
         251,
@@ -749,7 +821,41 @@
         256,
         257,
         258,
-        259
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293
       ]
     }
   }
